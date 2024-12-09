@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuromi Water Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <video class="video-background" autoplay muted loop>
+        <source src="file:///C:/Users/wproj/Downloads/0_Halloween_Cat_4096x2304.mov" type="video/quicktime">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Content Container -->
+    <div class="container" id="login-container">
+        <h1>Kuromi Water Tracker</h1>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <button onclick="login()">Login</button>
+        <button onclick="register()">Register</button>
+        <div class="result" id="login-result"></div>
+    </div>
+
+    <!-- Water Intake Tracker (Visible after login) -->
+    <div class="container" id="tracker-container" style="display: none;">
+        <h1>Daily Water Intake Tracker</h1>
+        <div class="form-group">
+            <label for="goal">Daily Water Goal (ml):</label>
+            <input type="number" id="goal" placeholder="Enter your daily water goal">
+        </div>
+        <div class="form-group">
+            <label for="consumed">Water Consumed (ml):</label>
+            <input type="number" id="consumed" placeholder="Enter the amount of water you drank">
+        </div>
+        <button onclick="calculateWater()">Submit</button>
+        <div class="result" id="result"></div>
+        <div id="calendar"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

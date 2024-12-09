@@ -1,0 +1,132 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    background-image: url('https://kawaiihoshi.com/wp-content/uploads/2023/08/gothic-lolita-kuromi-desktop-wallpaper-kawaii-hoshi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    border: 3px solid #ff66b2;
+    text-align: center;
+    overflow: visible;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ff66b2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    color: #ff66b2;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #ff66b2;
+    border-radius: 15px;
+    background-color: #fdf1f4;
+    color: #333;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff3399;
+}
+
+button {
+    width: 80%;
+    padding: 12px;
+    background: #ff66b2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff3399;
+}
+
+.result {
+    font-size: 18px;
+    color: #ff66b2;
+    margin-top: 20px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    margin-top: 20px;
+    padding: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.day {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.achieved {
+    background: #ff66b2;
+    color: white;
+    font-weight: bold;
+}
+
+.day:hover {
+    transform: scale(1.1);
+    background: #ff66b2;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #calendar {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+    }
+
+    .day {
+        padding: 10px;
+    }
+}
